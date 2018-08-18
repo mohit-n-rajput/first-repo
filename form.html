@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Register</title>
+</head>
+<body>
+	<!-- by default method of form is get. -->
+	<form method="get" action="">  
+		First Name: <input type="text" name="firstName"> <br><br>
+		Last Name: <input type="text" name="lastName"> <br><br>
+		email: <input type="email" name="email" required> <br><br>
+		password: <input type="password" name="password" min="6"> <br><br>
+		phone: <input type="tel" name="number" placeholder="123-456-7890"
+	           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" > <br><br>
+		date of birth: <input type="date" name="date"> <br><br>
+		Gender: <input type="radio" value="male" name="gender" checked> Male &ensp;
+				 <input type="radio" value="female" name="gender"> Female &ensp;
+				 <input type="radio" value="other" name="gender" > Other <br><br>
+		Computer's Os: <input type="checkbox" name="os" value="Windows">Windows &ensp;
+					   <input type="checkbox" name="os" checked value="Mac">Mac &ensp;
+					   <input type="checkbox" name="os" value="Linux">Linux
+		<br> <br>
+		Cars:&emsp;<select name="car">
+					<option  value="bmw">BMW</option>
+					<option  value="audi">Audi</option>
+					<option  value="tesla" selected>Tesla</option>
+			 		</select> <br>
+		<br>		 
+		<input type="submit" value="Register" name="register"> &emsp;
+		<input type="reset" name="reset">
+	</form>
+	<!-- value tag is used to give value to specific element name,when element is choose. -->
+	<!-- Form Ouput:
+			?firstName=MNR
+			&lastName=MNR
+			&email=mnr410126%40gmail.com  => % is shown  beacause of utf-8 encoding.
+			&password=334342
+			&number=323-345-1111
+			&date=2018-07-17
+			&gender=male
+			&os=Windows
+			&os=Mac
+			&car=tesla
+			&register=Register
+	-->
+	<br>
+	<a href="../anchor_tag/anchor_a.html">Back to Anchor</a>
+</body>
+</html>
